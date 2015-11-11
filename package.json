@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nf start"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -12,6 +12,7 @@
     "ejs": "^2.3.4",
     "ejs-locals": "^1.0.2",
     "express": "~4.13.1",
+    "foreman": "1.4.1",
     "mongoose": "^4.2.4",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
