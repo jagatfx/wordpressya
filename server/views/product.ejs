@@ -1,0 +1,69 @@
+<% layout( 'layout' ) -%>
+
+<div class="container">
+  <h2>Edit product</h2>
+  <form role="form" action="/api/product/<%= product._id %>" method="post" accept-charset="utf-8">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text" class="form-control" id="title" placeholder="Enter title" name="title" value="<%= product.title %>" />
+    </div>
+    <div class="form-group">
+      <label for="summary">Summary:</label>
+      <input type="text" class="form-control" id="summary" placeholder="Enter summary" name="summary" value="<%= product.summary %>" />
+    </div>
+    <div class="form-group">
+      <label for="type">Select type:</label>
+      <select class="form-control" id="type" name="type" value="<%= product.type %>"/>
+        <option <% if(product.type == 'theme') { %>selected="selected"<% } %>>theme</option>
+        <option <% if(product.type == 'plugin') { %>selected="selected"<% } %>>plugin</option>
+        <option <% if(product.type == 'hosting') { %>selected="selected"<% } %>>hosting</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="type">Link:</label>
+      <input type="text" class="form-control" id="link" placeholder="Enter link" name="link" value="<%= product.link %>" />
+    </div>
+    <div class="form-group">
+      <label for="type">Source:</label>
+      <input type="text" class="form-control" id="source" placeholder="Enter source" name="source" value="<%= product.source %>" />
+    </div>
+    <div class="form-group">
+      <label for="type">Tags:</label>
+      <input type="text" class="form-control" id="tags" placeholder="Enter tags" name="tags" value="<%= product.tags %>" />
+    </div>
+    <div class="form-group">
+      <label for="featureimg">Featured Image Link:</label>
+      <input type="text" class="form-control" id="featureimg" placeholder="Enter featured image link" name="featureimg" value="<%= product.featureimg %>" />
+    </div>
+    <div class="form-group">
+      <label for="review">Review Link:</label>
+      <input type="text" class="form-control" id="review" placeholder="Enter review link" name="review" value="<%= product.review %>" />
+    </div>
+    <div class="form-group">
+      <label for="visible">Visible:</label>
+      <select class="form-control" id="visible" name="visible" value="<%= product.visible %>" />
+        <option <% if(product.visible == true) { %>selected="selected"<% } %>>true</option>
+        <option <% if(product.visible == false) { %>selected="selected"<% } %>>false</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="quality">Quality Score:</label>
+      <input type="text" class="form-control" id="quality" placeholder="Enter quality score" name="quality" value="<%= product.quality %>" />
+    </div>
+    <div class="form-group">
+      <label for="cost">Cost ($):</label>
+      <input type="text" class="form-control" id="cost" placeholder="Enter cost ($)" name="cost" value="<%= product.cost %>" />
+    </div>
+    <div class="form-group">
+      <label for="sales">Number of Sales:</label>
+      <input type="text" class="form-control" id="sales" placeholder="Enter number of sales" name="sales" value="<%= product.sales %>" />
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <textarea class="form-control" rows="5" id="description" name="description"><%= product.description %></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-default">Update</button>
+    <a href="/api/product/">Cancel</a>
+  </form>
+</div>
