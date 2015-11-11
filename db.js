@@ -21,4 +21,8 @@ var productSchema = mongoose.Schema({
 });
 
 mongoose.model('Product', productSchema);
-mongoose.connect('mongodb://localhost/wordpressya');
+
+mongoose.connect(process.env.MONGOLAB_URI, function (error) {
+    if (error) console.error(error);
+    else console.log('mongo connected');
+});
