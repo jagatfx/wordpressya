@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Minimal |e-commerce template</title>
+    <title>Wordpressya | goto guide for Wordpress mastery</title>
 
     <meta name="keywords" content="">
 
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,400italic' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap and Font Awesome css -->
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme stylesheet -->
-    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
 
     <!-- Custom stylesheet - for your changes -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
 
     <!-- Responsivity for older IE -->
-    <script src="js/respond.min.js"></script>
+    <script src="/js/respond.min.js"></script>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <!-- owl carousel css -->
+
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+    <link href="/css/owl.theme.css" rel="stylesheet">
+
 </head>
 
-<body>
-    <!-- *** NAVBAR ***
+
+    <body>
+    <div id="all">
+
+        <!-- *** NAVBAR ***
 _________________________________________________________ -->
 
     <div class="navbar navbar-default navbar-fixed-top yamm" role="navigation" id="navbar">
         <div class="container">
             <div class="navbar-header">
 
-                <a class="navbar-brand home" href="index.html">
-                    <img src="img/logo.png" alt="Minimal logo" class="hidden-xs hidden-sm">
-                    <img src="img/logo-small.png" alt="Minimal logo" class="visible-xs visible-sm"><span class="sr-only">Minimal - go to homepage</span>
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/logo.png" alt="Minimal logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-small.png" alt="Wordpressya logo" class="visible-xs visible-sm"><span class="sr-only">Wordpressya - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-primary" data-toggle="collapse" data-target="#navigation">
                         <span class="sr-only">Toggle navigation</span>
                         <i class="fa fa-align-justify"></i>
                     </button>
-                    <a class="btn btn-primary navbar-toggle" href="basket.html">
-                        <i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">3 items in cart</span>
-                    </a>
                     <button type="button" class="navbar-toggle btn-default" data-toggle="collapse" data-target="#search">
                         <span class="sr-only">Toggle search</span>
                         <i class="fa fa-search"></i>
@@ -66,61 +72,47 @@ _________________________________________________________ -->
             <div class="navbar-collapse collapse" id="navigation">
 
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active dropdown normal-dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="index.html">Home - default</a>
-                            </li>
-                            <li><a href="index2.html">Home - intro image</a>
-                            </li>
-                        </ul>
+                    <li class="active dropdown normal-dropdown"><a href="/" class="dropdown-toggle" data-toggle="dropdown">Home</a>
                     </li>
                     <li class="dropdown yamm-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hosting <b class="caret"></b></a>
                         <ul class="dropdown-menu">
 
                             <li>
                                 <div class="yamm-content">
                                     <div class="row">
                                         <div class="col-sm-3">
-                                            <img src="img/men.jpg" class="img-responsive hidden-xs" alt="">
+                                            <img src="/img/men.jpg" class="img-responsive hidden-xs" alt="">
                                         </div>
                                         <div class="col-sm-3">
                                             <h3>Clothing</h3>
                                             <ul>
-                                                <li><a href="category.html">T-shirts</a>
+                                                <li><a href="/category">T-shirts</a>
                                                 </li>
-                                                <li><a href="category.html">Shirts</a>
+                                                <li><a href="/category">Shirts</a>
                                                 </li>
-                                                <li><a href="category.html">Pants</a>
+                                                <li><a href="/category">Pants</a>
                                                 </li>
-                                                <li><a href="category.html">Accessories</a>
+                                                <li><a href="/category">Accessories</a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-3">
                                             <h3>Clothing</h3>
                                             <ul>
-                                                <li><a href="category.html">T-shirts</a>
-                                                </li>
-                                                <li><a href="category.html">Shirts</a>
-                                                </li>
-                                                <li><a href="category.html">Pants</a>
-                                                </li>
-                                                <li><a href="category.html">Accessories</a>
-                                                </li>
+                                                <li><a href="/category">T-shirts</a></li>
+                                                <li><a href="/category">Shirts</a></li>
+                                                <li><a href="/category">Pants</a></li>
+                                                <li><a href="/category">Accessories</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-3">
                                             <h3>Shoes</h3>
                                             <ul>
-                                                <li><a href="category.html">Trainers</a>
-                                                </li>
-                                                <li><a href="category.html">Sandals</a>
-                                                </li>
-                                                <li><a href="category.html">Hiking shoes</a>
-                                                </li>
-                                                <li><a href="category.html">Casual</a>
-                                                </li>
+                                                <li><a href="/category">Trainers</a></li>
+                                                <li><a href="/category">Sandals</a></li>
+                                                <li><a href="/category">Hiking shoes</a></li>
+                                                <li><a href="/category">Casual</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -138,52 +130,40 @@ _________________________________________________________ -->
                         </ul>
                     </li>
                     <li class="dropdown yamm-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Themes <b class="caret"></b></a>
                         <ul class="dropdown-menu">
 
                             <li>
                                 <div class="yamm-content">
                                     <div class="row">
                                         <div class="col-sm-3">
-                                            <img src="img/women.jpg" class="img-responsive hidden-xs" alt="">
+                                            <img src="/img/women.jpg" class="img-responsive hidden-xs" alt="">
                                         </div>
                                         <div class="col-sm-3">
                                             <h3>Clothing</h3>
                                             <ul>
-                                                <li><a href="category.html">T-shirts</a>
-                                                </li>
-                                                <li><a href="category.html">Shirts</a>
-                                                </li>
-                                                <li><a href="category.html">Pants</a>
-                                                </li>
-                                                <li><a href="category.html">Accessories</a>
-                                                </li>
+                                                <li><a href="/category">T-shirts</a></li>
+                                                <li><a href="/category">Shirts</a></li>
+                                                <li><a href="/category">Pants</a></li>
+                                                <li><a href="/category">Accessories</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-3">
                                             <h3>Clothing</h3>
                                             <ul>
-                                                <li><a href="category.html">T-shirts</a>
-                                                </li>
-                                                <li><a href="category.html">Shirts</a>
-                                                </li>
-                                                <li><a href="category.html">Pants</a>
-                                                </li>
-                                                <li><a href="category.html">Accessories</a>
-                                                </li>
+                                                <li><a href="/category">T-shirts</a></li>
+                                                <li><a href="/category">Shirts</a></li>
+                                                <li><a href="/category">Pants</a></li>
+                                                <li><a href="/category">Accessories</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-3">
                                             <h3>Shoes</h3>
                                             <ul>
-                                                <li><a href="category.html">Trainers</a>
-                                                </li>
-                                                <li><a href="category.html">Sandals</a>
-                                                </li>
-                                                <li><a href="category.html">Hiking shoes</a>
-                                                </li>
-                                                <li><a href="category.html">Casual</a>
-                                                </li>
+                                                <li><a href="/category">Trainers</a></li>
+                                                <li><a href="/category">Sandals</a></li>
+                                                <li><a href="/category">Hiking shoes</a></li>
+                                                <li><a href="/category">Casual</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -201,7 +181,7 @@ _________________________________________________________ -->
                         </ul>
                     </li>
                     <li class="dropdown yamm-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Template <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Plugins <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="yamm-content">
@@ -209,70 +189,46 @@ _________________________________________________________ -->
                                         <div class="col-sm-3">
                                             <h5>Homepage</h5>
                                             <ul>
-                                                <li><a href="index.html">Homepage - with slideshow</a>
-                                                </li>
-                                                <li><a href="index2.html">Homepage - with intro image</a>
-                                                </li>
+                                                <li><a href="/">Homepage - with slideshow</a></li>
                                             </ul>
                                             <h5>Shop</h5>
                                             <ul>
-                                                <li><a href="category.html">Category - sidebar right</a>
-                                                </li>
-                                                <li><a href="category-left.html">Category - sidebar left</a>
-                                                </li>
-                                                <li><a href="category-full.html">Category - full width</a>
-                                                </li>
-                                                <li><a href="detail.html">Product detail</a>
-                                                </li>
+                                                <li><a href="/category">Category - sidebar right</a></li>
+                                                <li><a href="/category-left">Category - sidebar left</a></li>
+                                                <li><a href="/category-full">Category - full width</a></li>
+                                                <li><a href="/detail">Product detail</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-3">
                                             <h5>User</h5>
                                             <ul>
-                                                <li><a href="register.html">Register / login</a>
-                                                </li>
-                                                <li><a href="customer-orders.html">Orders history</a>
-                                                </li>
-                                                <li><a href="customer-order.html">Order history detail</a>
-                                                </li>
-                                                <li><a href="customer-wishlist.html">Wishlist</a>
-                                                </li>
-                                                <li><a href="customer-account.html">Customer account / change password</a>
-                                                </li>
+                                                <li><a href="/register">Register / login</a></li>
+                                                <li><a href="/customer-orders">Orders history</a></li>
+                                                <li><a href="/customer-order">Order history detail</a></li>
+                                                <li><a href="/customer-wishlist">Wishlist</a></li>
+                                                <li><a href="/customer-account">Customer account / change password</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-3">
                                             <h5>Order process</h5>
                                             <ul>
-                                                <li><a href="basket.html">Shopping cart</a>
-                                                </li>
-                                                <li><a href="checkout1.html">Checkout - step 1</a>
-                                                </li>
-                                                <li><a href="checkout2.html">Checkout - step 2</a>
-                                                </li>
-                                                <li><a href="checkout3.html">Checkout - step 3</a>
-                                                </li>
-                                                <li><a href="checkout4.html">Checkout - step 4</a>
-                                                </li>
+                                                <li><a href="/basket">Shopping cart</a></li>
+                                                <li><a href="/checkout1">Checkout - step 1</a></li>
+                                                <li><a href="/checkout2">Checkout - step 2</a></li>
+                                                <li><a href="/checkout3">Checkout - step 3</a></li>
+                                                <li><a href="/checkout4">Checkout - step 4</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-3">
                                             <h5>Pages and blog</h5>
                                             <ul>
-                                                <li><a href="blog.html">Blog listing</a>
-                                                </li>
-                                                <li><a href="post.html">Blog Post</a>
-                                                </li>
-                                                <li><a href="faq.html">FAQ</a>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a>
-                                                </li>
-                                                <li><a href="text.html">Text page</a>
-                                                </li>
-                                                <li><a href="text-left.html">Text page - left sidebar</a>
-                                                </li>
-                                                <li><a href="404.html">404 page</a>
-                                                </li>
+                                                <li><a href="/blog">Blog listing</a></li>
+                                                <li><a href="/post">Blog Post</a></li>
+                                                <li><a href="/faq">FAQ</a></li>
+                                                <li><a href="/contact">Contact</a></li>
+                                                <li><a href="/text">Text page</a></li>
+                                                <li><a href="/text-left">Text page - left sidebar</a></li>
+                                                <li><a href="/404">404 page</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -281,15 +237,10 @@ _________________________________________________________ -->
                             </li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a>
+                    <li><a href="/contact">Contact</a>
                     </li>
                 </ul>
 
-            </div>
-            <!--/.nav-collapse -->
-
-            <div class="navbar-collapse collapse right" id="basket-overview">
-                <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items <span class="hidden-md">in cart</span></span></a>
             </div>
             <!--/.nav-collapse -->
 
@@ -310,14 +261,12 @@ _________________________________________________________ -->
             <div class="collapse clearfix" id="search">
 
                 <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-btn">
-
-			<button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
-
-		    </span>
-                    </div>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                    </span>
+                  </div>
                 </form>
 
             </div>
@@ -325,13 +274,12 @@ _________________________________________________________ -->
 
         </div>
 
-
     </div>
     <!-- /#navbar -->
 
     <!-- *** NAVBAR END *** -->
 
-    <!-- *** LOGIN MODAL ***
+        <!-- *** LOGIN MODAL ***
 _________________________________________________________ -->
 
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
@@ -343,7 +291,7 @@ _________________________________________________________ -->
                     <h4 class="modal-title" id="Login">Customer login</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="customer-orders.html" method="post">
+                    <form action="/customer-orders" method="post">
                         <div class="form-group">
                             <input type="text" class="form-control" id="email" placeholder="email">
                         </div>
@@ -358,7 +306,7 @@ _________________________________________________________ -->
                     </form>
 
                     <p class="text-center text-muted">Not registered yet?</p>
-                    <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+                    <p class="text-center text-muted"><a href="/register"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
 
                 </div>
             </div>
@@ -367,15 +315,13 @@ _________________________________________________________ -->
 
     <!-- *** LOGIN MODAL END *** -->
 
-    <div id="all">
-
-        <div id="content">
+            <div id="content">
             <div class="container">
 
                 <div class="col-md-12">
                     <ul class="breadcrumb">
 
-                        <li><a href="index.html">Home</a>
+                        <li><a href="/">Home</a>
                         </li>
                         <li>My wishlist</li>
                     </ul>
@@ -404,8 +350,8 @@ _________________________________________________________ -->
                         <div class="col-md-3 col-sm-4">
                             <div class="product">
                                 <div class="image">
-                                    <a href="detail.html">
-                                        <img src="img/product1.jpg" alt="" class="img-responsive image1">
+                                    <a href="/detail">
+                                        <img src="/img/product1.jpg" alt="" class="img-responsive image1">
                                     </a>
                                     <div class="quick-view-button">
                                         <a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-default btn-sm">Quick view</a>
@@ -413,7 +359,7 @@ _________________________________________________________ -->
                                 </div>
                                 <!-- /.image -->
                                 <div class="text">
-                                    <h3><a href="detail.html">Fur coat with very but very very long name</a></h3>
+                                    <h3><a href="/detail">Fur coat with very but very very long name</a></h3>
                                     <p class="price">$143.00</p>
                                 </div>
                                 <!-- /.text -->
@@ -424,8 +370,8 @@ _________________________________________________________ -->
                         <div class="col-md-3 col-sm-4">
                             <div class="product">
                                 <div class="image">
-                                    <a href="detail.html">
-                                        <img src="img/product2.jpg" alt="" class="img-responsive image1">
+                                    <a href="/detail">
+                                        <img src="/img/product2.jpg" alt="" class="img-responsive image1">
                                     </a>
                                     <div class="quick-view-button">
                                         <a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-default btn-sm">Quick view</a>
@@ -433,7 +379,7 @@ _________________________________________________________ -->
                                 </div>
                                 <!-- /.image -->
                                 <div class="text">
-                                    <h3><a href="detail.html">White Blouse Armani</a></h3>
+                                    <h3><a href="/detail">White Blouse Armani</a></h3>
                                     <p class="price"><del>$280</del> $143.00</p>
                                 </div>
                                 <!-- /.text -->
@@ -456,8 +402,8 @@ _________________________________________________________ -->
                         <div class="col-md-3 col-sm-4">
                             <div class="product">
                                 <div class="image">
-                                    <a href="detail.html">
-                                        <img src="img/product3.jpg" alt="" class="img-responsive image1">
+                                    <a href="/detail">
+                                        <img src="/img/product3.jpg" alt="" class="img-responsive image1">
                                     </a>
                                     <div class="quick-view-button">
                                         <a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-default btn-sm">Quick view</a>
@@ -465,7 +411,7 @@ _________________________________________________________ -->
                                 </div>
                                 <!-- /.image -->
                                 <div class="text">
-                                    <h3><a href="detail.html">Black Blouse Versace</a></h3>
+                                    <h3><a href="/detail">Black Blouse Versace</a></h3>
                                     <p class="price">$143.00</p>
                                 </div>
                                 <!-- /.text -->
@@ -476,8 +422,8 @@ _________________________________________________________ -->
                         <div class="col-md-3 col-sm-4">
                             <div class="product">
                                 <div class="image">
-                                    <a href="detail.html">
-                                        <img src="img/product4.jpg" alt="" class="img-responsive image1">
+                                    <a href="/detail">
+                                        <img src="/img/product4.jpg" alt="" class="img-responsive image1">
                                     </a>
                                     <div class="quick-view-button">
                                         <a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-default btn-sm">Quick view</a>
@@ -485,7 +431,7 @@ _________________________________________________________ -->
                                 </div>
                                 <!-- /.image -->
                                 <div class="text">
-                                    <h3><a href="detail.html">Black Blouse Versace</a></h3>
+                                    <h3><a href="/detail">Black Blouse Versace</a></h3>
                                     <p class="price">$143.00</p>
                                 </div>
                                 <!-- /.text -->
@@ -496,8 +442,8 @@ _________________________________________________________ -->
                         <div class="col-md-3 col-sm-4">
                             <div class="product">
                                 <div class="image">
-                                    <a href="detail.html">
-                                        <img src="img/product3.jpg" alt="" class="img-responsive image1">
+                                    <a href="/detail">
+                                        <img src="/img/product3.jpg" alt="" class="img-responsive image1">
                                     </a>
                                     <div class="quick-view-button">
                                         <a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-default btn-sm">Quick view</a>
@@ -505,7 +451,7 @@ _________________________________________________________ -->
                                 </div>
                                 <!-- /.image -->
                                 <div class="text">
-                                    <h3><a href="detail.html">White Blouse Armani</a></h3>
+                                    <h3><a href="/detail">White Blouse Armani</a></h3>
                                     <p class="price"><del>$280</del> $143.00</p>
                                 </div>
                                 <!-- /.text -->
@@ -528,8 +474,8 @@ _________________________________________________________ -->
                         <div class="col-md-3 col-sm-4">
                             <div class="product">
                                 <div class="image">
-                                    <a href="detail.html">
-                                        <img src="img/product4.jpg" alt="" class="img-responsive image1">
+                                    <a href="/detail">
+                                        <img src="/img/product4.jpg" alt="" class="img-responsive image1">
                                     </a>
                                     <div class="quick-view-button">
                                         <a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-default btn-sm">Quick view</a>
@@ -537,7 +483,7 @@ _________________________________________________________ -->
                                 </div>
                                 <!-- /.image -->
                                 <div class="text">
-                                    <h3><a href="detail.html">White Blouse Versace</a></h3>
+                                    <h3><a href="/detail">White Blouse Versace</a></h3>
                                     <p class="price">$143.00</p>
                                 </div>
                                 <!-- /.text -->
@@ -554,8 +500,8 @@ _________________________________________________________ -->
                         <div class="col-md-3 col-sm-4">
                             <div class="product">
                                 <div class="image">
-                                    <a href="detail.html">
-                                        <img src="img/product2.jpg" alt="" class="img-responsive image1">
+                                    <a href="/detail">
+                                        <img src="/img/product2.jpg" alt="" class="img-responsive image1">
                                     </a>
                                     <div class="quick-view-button">
                                         <a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-default btn-sm">Quick view</a>
@@ -563,7 +509,7 @@ _________________________________________________________ -->
                                 </div>
                                 <!-- /.image -->
                                 <div class="text">
-                                    <h3><a href="detail.html">White Blouse Versace</a></h3>
+                                    <h3><a href="/detail">White Blouse Versace</a></h3>
                                     <p class="price">$143.00</p>
                                 </div>
                                 <!-- /.text -->
@@ -580,8 +526,8 @@ _________________________________________________________ -->
                         <div class="col-md-3 col-sm-4">
                             <div class="product">
                                 <div class="image">
-                                    <a href="detail.html">
-                                        <img src="img/product1.jpg" alt="" class="img-responsive image1">
+                                    <a href="/detail">
+                                        <img src="/img/product1.jpg" alt="" class="img-responsive image1">
                                     </a>
                                     <div class="quick-view-button">
                                         <a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-default btn-sm">Quick view</a>
@@ -589,7 +535,7 @@ _________________________________________________________ -->
                                 </div>
                                 <!-- /.image -->
                                 <div class="text">
-                                    <h3><a href="detail.html">Fur coat</a></h3>
+                                    <h3><a href="/detail">Fur coat</a></h3>
                                     <p class="price">$143.00</p>
                                 </div>
                                 <!-- /.text -->
@@ -608,7 +554,7 @@ _________________________________________________________ -->
                                         <div class="row quick-view product-main">
                                             <div class="col-sm-6">
                                                 <div class="quick-view-main-image">
-                                                    <img src="img/detailbig1.jpg" alt="" class="img-responsive">
+                                                    <img src="/img/detailbig1.jpg" alt="" class="img-responsive">
                                                 </div>
 
                                                 <div class="ribbon ribbon-quick-view sale">
@@ -625,18 +571,18 @@ _________________________________________________________ -->
 
                                                 <div class="row thumbs">
                                                     <div class="col-xs-4">
-                                                        <a href="img/detailbig1.jpg" class="thumb">
-                                                            <img src="img/detailsquare.jpg" alt="" class="img-responsive">
+                                                        <a href="/img/detailbig1.jpg" class="thumb">
+                                                            <img src="/img/detailsquare.jpg" alt="" class="img-responsive">
                                                         </a>
                                                     </div>
                                                     <div class="col-xs-4">
-                                                        <a href="img/detailbig2.jpg" class="thumb">
-                                                            <img src="img/detailsquare2.jpg" alt="" class="img-responsive">
+                                                        <a href="/img/detailbig2.jpg" class="thumb">
+                                                            <img src="/img/detailsquare2.jpg" alt="" class="img-responsive">
                                                         </a>
                                                     </div>
                                                     <div class="col-xs-4">
-                                                        <a href="img/detailbig3.jpg" class="thumb">
-                                                            <img src="img/detailsquare3.jpg" alt="" class="img-responsive">
+                                                        <a href="/img/detailbig3.jpg" class="thumb">
+                                                            <img src="/img/detailsquare3.jpg" alt="" class="img-responsive">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -727,16 +673,16 @@ _________________________________________________________ -->
 
                             <ul class="nav nav-pills nav-stacked">
                                 <li class="active">
-                                    <a href="customer-orders.html"><i class="fa fa-list"></i> My orders</a>
+                                    <a href="/customer-orders"><i class="fa fa-list"></i> My orders</a>
                                 </li>
                                 <li>
-                                    <a href="customer-wishlist.html"><i class="fa fa-heart"></i> My wishlist</a>
+                                    <a href="/customer-wishlist"><i class="fa fa-heart"></i> My wishlist</a>
                                 </li>
                                 <li>
-                                    <a href="customer-account.html"><i class="fa fa-user"></i> My account</a>
+                                    <a href="/customer-account"><i class="fa fa-user"></i> My account</a>
                                 </li>
                                 <li>
-                                    <a href="index.html"><i class="fa fa-sign-out"></i> Logout</a>
+                                    <a href="/"><i class="fa fa-sign-out"></i> Logout</a>
                                 </li>
                             </ul>
                         </div>
@@ -755,24 +701,16 @@ _________________________________________________________ -->
         </div>
         <!-- /#content -->
 
-
-        <!-- *** FOOTER ***
-_________________________________________________________ -->
-
-        <div id="footer">
+            <div id="footer">
             <div class="container">
                 <div class="col-md-3 col-sm-6">
                     <h4>Pages</h4>
 
                     <ul>
-                        <li><a href="text.html">About us</a>
-                        </li>
-                        <li><a href="text-left.html">Terms and conditions</a>
-                        </li>
-                        <li><a href="faq.html">FAQ</a>
-                        </li>
-                        <li><a href="contact.html">Contact us</a>
-                        </li>
+                        <li><a href="/text">About us</a></li>
+                        <li><a href="/text-left">Terms and conditions</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/contact">Contact us</a></li>
                     </ul>
 
                     <hr>
@@ -780,10 +718,8 @@ _________________________________________________________ -->
                     <h4>User section</h4>
 
                     <ul>
-                        <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
-                        </li>
-                        <li><a href="register.html">Regiter</a>
-                        </li>
+                        <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                        <li><a href="/register">Register</a></li>
                     </ul>
 
                     <hr class="hidden-md hidden-lg hidden-sm">
@@ -795,27 +731,23 @@ _________________________________________________________ -->
 
                     <h4>Top categories</h4>
 
-                    <h5>Men</h5>
+                    <h5>Themes</h5>
 
                     <ul>
-                        <li><a href="category.html">T-shirts</a>
-                        </li>
-                        <li><a href="category.html">Shirts</a>
-                        </li>
-                        <li><a href="category.html">Accessories</a>
-                        </li>
+                        <li><a href="/category">For my business</a></li>
+                        <li><a href="/category">Modern blog</a></li>
+                        <li><a href="/category">Games</a></li>
+                        <li><a href="/category">Fashion</a></li>
+                        <li><a href="/category">Food</a></li>
+                        <li><a href="/category">Sports</a></li>
                     </ul>
 
-                    <h5>Ladies</h5>
+                    <h5>Plugins</h5>
                     <ul>
-                        <li><a href="category.html">T-shirts</a>
-                        </li>
-                        <li><a href="category.html">Skirts</a>
-                        </li>
-                        <li><a href="category.html">Pants</a>
-                        </li>
-                        <li><a href="category.html">Accessories</a>
-                        </li>
+                        <li><a href="/category">T-shirts</a></li>
+                        <li><a href="/category">Skirts</a></li>
+                        <li><a href="/category">Pants</a></li>
+                        <li><a href="/category">Accessories</a></li>
                     </ul>
 
                     <hr class="hidden-md hidden-lg">
@@ -824,19 +756,6 @@ _________________________________________________________ -->
                 <!-- /.col-md-3 -->
 
                 <div class="col-md-3 col-sm-6">
-
-                    <h4>Where to find us</h4>
-
-                    <p><strong>Obaju Ltd.</strong>
-                        <br>13/25 New Avenue
-                        <br>New Heaven
-                        <br>45Y 73J
-                        <br>England
-                        <br>
-                        <strong>Great Britain</strong>
-                    </p>
-
-                    <a href="contact.html">Go to contact page</a>
 
                     <hr class="hidden-md hidden-lg hidden-sm">
 
@@ -849,21 +768,21 @@ _________________________________________________________ -->
 
                     <h4>Get the news</h4>
 
-                    <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <p class="text-muted">Stay informed of the latest hot themes ready to empower your website.</p>
 
-                    <form>
-                        <div class="input-group">
+                    <a href="/contact">Go to contact page</a>
 
-                            <input type="text" class="form-control">
-
-                            <span class="input-group-btn">
-
-			<button class="btn btn-default" type="button">Subscribe!</button>
-
-		    </span>
-
+                    <form action="//wordpressya.us12.list-manage.com/subscribe/post?u=affbcac6e3f55e574049d1522&amp;id=a6f371db44" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll" class="input-group">
+                          <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                          <div style="position: absolute; left: -5000px;">
+                            <input type="text" class="form-control" name="b_affbcac6e3f55e574049d1522_a6f371db44" tabindex="-1" value="">
+                          </div>
+                          <span class="input-group-btn">
+                            <input type="submit" value="Subscribe!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+                          </span>
                         </div>
-                        <!-- /input-group -->
                     </form>
 
                     <hr>
@@ -885,17 +804,11 @@ _________________________________________________________ -->
         </div>
         <!-- /#footer -->
 
-        <!-- *** FOOTER END *** -->
-
-        <!-- *** COPYRIGHT ***
-_________________________________________________________ -->
-
-        <div id="copyright">
+            <div id="copyright">
             <div class="container">
                 <div class="col-md-12">
-                    <p class="pull-left">&copy; 2014. Minimal is responsive template by <a href="http://www.ondrejsvestka.cz" class="external">Ondrej Svestka</a>.</p>
+                    <p class="pull-left">&copy; 2015. Wordpressya</p>
                     <p class="pull-right">
-                        <img src="img/payment.png" alt="payments accepted">
                     </p>
 
                 </div>
@@ -903,25 +816,31 @@ _________________________________________________________ -->
         </div>
         <!-- /#copyright -->
 
-        <!-- *** COPYRIGHT END *** -->
+      <!-- #### JAVASCRIPT FILES ### -->
 
+  <script src="/js/jquery-1.11.0.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/jquery.cookie.js"></script>
+  <script src="/js/front.js"></script>
+
+  <!-- owl carousel -->
+  <script src="/js/owl.carousel.min.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-70089719-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 
 
     </div>
     <!-- /#all -->
 
-
-    <!-- #### JAVASCRIPT FILES ### -->
-
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.cookie.js"></script>
-    <script src="js/front.js"></script>
-
-    
-
-
-
-</body>
+    </body>
 
 </html>
