@@ -19,16 +19,23 @@ router.get('/api/product/', function(req, res, next) {
   }
   Product.find(findParam).sort({title: 'asc'}).limit(maxResults).exec(function (err, products) {
     if (err) {
-      return console.error(err);
+      res.json( {result: err} );
+      return;
     }
-    res.render( 'index', {
-      title : 'Products',
-      products : products
-    });
+    res.json(products);
   });
 });
 
-var util = require('util');
+router.get('/api/product/:id', function(req, res, next) {
+  Product.findById(req.params.id, function (err, product) {
+    if (err) {
+      res.json( {result: err} );
+      return;
+    }
+    res.json(product);
+  });
+});
+
 router.post('/api/product/', function (req, res) {
   // look for existing product with same URL
   Product.findOne({"link": req.body.link}, function(err, product) {
@@ -48,9 +55,12 @@ router.post('/api/product/', function (req, res) {
       product.updated_at  = Date.now();
       product.save( function ( err, product, count ) {
         if (err) {
-          return console.error(err);
+          res.json( {result: err} );
+          return;
+        } else {
+          console.log('saved product: '+product.link);
+          res.json( {result: 'OK'} );
         }
-        res.redirect('/api/product');
       });
     } else {
       new Product({
@@ -70,11 +80,12 @@ router.post('/api/product/', function (req, res) {
         updated_at  : Date.now()
       }).save( function( err, product, count ) {
         if (err) {
-          return console.error(err);
+          res.json( {result: err} );
+          return;
         } else {
           console.log('saved product: '+product.link);
+          res.json( {result: 'OK'} );
         }
-        res.redirect('/api/product');
       });
     }
   });
@@ -98,29 +109,60 @@ router.post('/api/product/:id', function (req, res) {
     product.updated_at  = Date.now();
     product.save( function ( err, product, count ) {
       if (err) {
-        return console.error(err);
+        res.json( {result: err} );
+        return;
       }
-      res.redirect('/api/product');
-    });
-  });
-});
-
-router.get('/api/product/edit/:id', function (req, res) {
-  Product.findById(req.params.id, function (err, product) {
-    res.render( 'product', {
-      product : product
+      res.json( {result: 'OK'} );
     });
   });
 });
 
 router.put('/api/product/', function (req, res) {
-  res.send('Got a PUT request');
+  res.json({result: 'PUT unimplemented'});
 });
 
 router.get('/api/product/delete/:id', function (req, res) {
   Product.findById(req.params.id, function (err, product) {
     product.remove( function (err, product) {
-      res.redirect('/api/product');
+      if (err) {
+        res.json( {result: err} );
+        return;
+      }
+      res.send( {result: 'OK'} );
+    });
+  });
+});
+
+////////////////////////////////
+
+router.get('/admin/product/', function(req, res, next) {
+  var results = req.query.results;
+  var type = req.query.type;
+  // TODO: implement pagination
+  // var page = req.query.page;
+  var maxResults = 0;
+  var findParam = {};
+  if (type) {
+    findParam.type = type;
+  }
+  if (results) {
+    maxResults = results;
+  }
+  Product.find(findParam).sort({title: 'asc'}).limit(maxResults).exec(function (err, products) {
+    if (err) {
+      return console.error(err);
+    }
+    res.render( 'index', {
+      title : 'Products',
+      products : products
+    });
+  });
+});
+
+router.get('/admin/product/edit/:id', function (req, res) {
+  Product.findById(req.params.id, function (err, product) {
+    res.render( 'product', {
+      product : product
     });
   });
 });
